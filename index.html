@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- title bar -->
+    <div class="title flex align-center justify-between">
+        <h1>Just<span>Dessert</span></h1>
+        <div class="flex align-center justify-between">
+            <button onclick="removeJoin(this)">Join</button>
+            <button>Login</button>
+        </div>
+    </div>
+
+    <!-- search bar -->
+    <div class="search flex align-center justify-around">
+        <div class="searchbox flex align-center justify-between">
+            <input id="search" type="text">
+            <button onclick="alertSearch()">Search</button>
+        </div>
+        <div>
+            <img src="https://placekeanu.com/100/100" alt="">
+            <p>Tex</p>
+        </div>
+        <div>
+            <img src="https://placekeanu.com/100/100" alt="">
+            <p>Text text text</p>
+        </div>
+        <div>
+            <img src="https://placekeanu.com/100/100" alt="">
+            <p>Text text text</p>
+        </div>
+        <div>
+            <img src="https://placekeanu.com/100/100" alt="">
+            <p>Text text text</p>
+        </div>
+    </div>
+
+    <!-- columns -->
+    <div class="columns flex">
+        <div class="col-3">
+            <div class="recipe-card">
+                <h1>Recipe of the Day</h1>
+                <img class="recipe-img" src="https://placekeanu.com/1920/1080" alt="">
+                <div class="flex align-center justify-between">
+                    <p>Orange Tart Jelly Tea Thing</p>
+                    <div class="flex align-center justify-between">
+                        <img
+                            onclick="like('#like-count-1')"
+                            class="heart"
+                            src="https://placekeanu.com/50/50"
+                            alt=""
+                        >
+                        <p id="like-count-1">66</p>
+                    </div>
+                </div>
+                <p>By <a href="">Brendan</a></p>
+            </div>
+            <a class="full-recipe" href="">See Full Recipe</a>
+        </div>
+        <div class="col-2">
+            <h4>Recommended for you!</h4>
+            <div class="recipe-card">
+                <img class="recipe-img" src="https://placekeanu.com/1920/1080" alt="">
+                <div class="flex align-center justify-between">
+                    <p>Orange Tart Jelly Tea Thing</p>
+                    <div class="flex align-center justify-between">
+                        <img onclick="like('#like-count-2')" class="heart" src="https://placekeanu.com/50/50" alt="">
+                        <p id="like-count-2">66</p>
+                    </div>
+                </div>
+                <p>By <a href="">Brendan</a></p>
+            </div>
+            <div class="recipe-card">
+                <img class="recipe-img" src="https://placekeanu.com/1920/1080" alt="">
+                <div class="flex align-center justify-between">
+                    <p>Orange Tart Jelly Tea Thing</p>
+                    <div class="flex align-center justify-between">
+                        <img onclick="like('#like-count-3')" class="heart" src="https://placekeanu.com/50/50" alt="">
+                        <p id="like-count-3">66</p>
+                    </div>
+                </div>
+                <p>By <a href="">Brendan</a></p>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
